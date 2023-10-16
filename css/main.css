@@ -24,7 +24,7 @@ header nav .nav-right-section {
     width: 250px;
     height: auto;
     display: flex;
-    list-style-type: none; /*Para quitar los puntos de la lista*/
+    list-style-type: none;
     justify-content: center;
     align-items: center;
 }
@@ -74,7 +74,7 @@ main .main-input {
 .main-input-container{
     width: 525px;
     border-radius: 100px;
-    border: 2px solid #dfe1e5;
+    border: 1px solid #dfe1e5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,27 +92,27 @@ main .main-input {
     border-color: #dfe1e500;
 }
 
-.search-icon{
+.main-input .search-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;   
     background-size: contain;
-    width: 18px; 
+    width: 18px;
     height: 18px;
 }
 
-.micro-icon {
+.main-input .micro-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 18px; 
-    height: 18px; 
+    width: 18px;
+    height: 18px;
     cursor: pointer;
 }
 
-.main-buttons {
-    width: 900px;
+.main-buttons{
+    width: 530px;
     margin: 0 auto;
 }
 
@@ -124,9 +124,9 @@ main .main-input {
     height: 36px;
     background-color: #f2f2f2;
     border: 0;
-    font-size: 14px;
+    font-size: 14px; 
     color: #5f6368;
-    border-radius: 5px;
+    border-radius: 5px; 
     padding: 0 15px;
     margin-right: 15px;
 }
@@ -139,8 +139,7 @@ main .main-input {
     cursor: pointer;
 }
 
-footer{
-    margin: 0;
+footer{ /*Se le da el formato correspondiente al footer*/
     background-color: #f2f2f2;
     width: 100%;
     height: 90px;
@@ -150,44 +149,39 @@ footer{
     font-size: 15px;
 }
 
-footer .foot-section{
-    width: 250;
+footer p { /*Se le da el estilo correspondiente a México*/
+    padding-left: 25px;
+    border-bottom: 1px solid #dadce0;
+    padding-bottom: 15px;
+}
+
+footer .foot-section{ /*Ubica los elementos en su lado correspondiente y en horizontal*/
 	height: auto;
 	display: flex;
 	list-style: none;
-	justify-content: center;
     padding: 0;
 }
 
-.left a{
-    padding-left: 0;
-    margin-right: 0px;
-    color: #70757a;
-    padding-left: 30px;
-}
-
-.left{
+.left{ /*Se le da el formato correspondiente al lado izquierdo*/
     display: flex;
     text-align: left;
     flex: 1;
 }
 
-.right{
+.left a{ /*Se termina el formato correspondiente al lado izquierdo*/
+    margin-right: 0px;
+    color: #70757a;
+    padding-left: 30px;
+}
+
+.right{ /*Se le da el formato correspondiente al lado derecho*/
     display: flex;
     text-align: right;
-    gap: 30px;
-    margin: 0;
+}
+
+.right a{ /*Se termina el formato correspondiente al lado derecho*/
+    color: #70757a;
     padding-right: 25px;
-    color: #70757a;
-}
-.right a{
-    color: #70757a;
-   
-
 }
 
-footer p {
-    padding-left: 25px;
-    border-bottom: 1px solid #dadce0;
-    padding-bottom: 15px;
-}
+
